@@ -51,7 +51,7 @@ interval=30
 # (defaults to 10 for 10%).
 [disk]
 command=$SCRIPT_DIR/disk_usage
-label= 
+label=  
 #DIR=/mnt/data
 interval=30
 
@@ -86,7 +86,7 @@ interval=5
 
 [temperature]
 command=$SCRIPT_DIR/temperature
-label=TEMP
+label=󰍛  
 interval=10
 #T_WARN=70
 #T_CRIT=90
@@ -97,7 +97,7 @@ SENSOR_CHIP="coretemp-isa-0000"
 # see the script for details.
 [cpu_util_detailed]
 command=$SCRIPT_DIR/cpu_util_detailed
-label=CPU
+label=󰍛 
 markup=pango
 interval=-2
 #report_time=5
