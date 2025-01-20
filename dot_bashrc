@@ -1,0 +1,34 @@
+#
+# ~/.bashrc
+#
+
+# If not running interactively, don't do anything
+[[ $- != *i* ]] && return
+
+
+export EDITOR=nvim
+
+alias ls='ls --color=auto'
+alias scroff='xset dpms force off'
+alias grep='grep --color=auto'
+alias ssh='TERM=xterm-256color ssh'
+alias server='TERM=xterm-256color ssh -i /home/top1ordie/keys/server.key ubuntu@server'
+alias non='bluetoothctl connect CC:14:BC:33:9E:6F'
+alias noff='bluetoothctl disconnect CC:14:BC:33:9E:6F'
+alias br='brightnessctl set'
+alias wifion='nmcli radio wifi on'
+alias wifioff='nmcli radio wifi off'
+alias brdown='nmcli connection down bridge-br0'
+alias vim='nvim'
+alias chout='autorandr --change'
+alias ipt='sudo iptables -L -nv --line-numbers'
+export PATH=$PATH:/home/top1ordie/.local/bin
+# Цвета Catppuccin Mocha
+FG_TEXT="\[\e[38;2;205;214;244m\]"  # Текст
+FG_ACCENT="\[\e[38;2;245;194;231m\]"  # Акцент
+FG_HIGHLIGHT="\[\e[38;2;166;227;161m\]"  # Подсветка
+RESET="\[\e[0m\]"  # Сброс цветов
+
+# PS1 с Catppuccin
+export PS1="${FG_ACCENT}\u${RESET}@${FG_HIGHLIGHT}\h ${FG_TEXT}\w${RESET}\$ "
+
