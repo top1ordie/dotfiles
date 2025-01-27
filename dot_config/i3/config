@@ -126,6 +126,11 @@ bindsym $mod+e layout toggle split
   set $ws8 "8"
   set $ws9 "9"
   set $ws10 "10"
+  set $ws11 "11"
+  set $ws12 "12"
+  set $ws13 "13"
+  set $ws14 "14"
+  set $ws15 "15"
 
   # switch to workspace
   bindsym $mod+1 workspace number $ws1
@@ -138,6 +143,10 @@ bindsym $mod+e layout toggle split
   bindsym $mod+F3 workspace number $ws8
   bindsym $mod+F4 workspace number $ws9
   bindsym $mod+F5 workspace number $ws10
+  bindsym Super_L+1 workspace number $ws11
+  bindsym Super_L+2 workspace number $ws12
+  bindsym Super_L+3 workspace number $ws13
+  bindsym Super_L+4 workspace number $ws15
 
   # move focused container to workspace
   bindsym $mod+Shift+1 move container to workspace number $ws1
@@ -208,11 +217,14 @@ bindsym --release $mod+Shift+S exec --no-startup-id ~/.local/bin/screenshot -s ~
 bindsym --release Print exec --no-startup-id ~/.local/bin/screenshot ~/Pictures/Screenhots/
 
 bindsym $mod+Shift+a sticky toggle
+bindsym $mod+z exec xournalpp
+#default_floating_border pixel 0
+default_border pixel 2
 
-default_border pixel 0
 
-default_floating_border pixel 0
-
-for_window [class="^.*"] border pixel 2
-
+#for_window [class="^.*"] border pixel 2
+for_window [class="Com.github.xournalpp.xournalpp"] floating enable 
+for_window [class="qBittorrent"] floating enable 
+floating_modifier Mod1
+for_window [window_role="pop-up"] floating enable
 
