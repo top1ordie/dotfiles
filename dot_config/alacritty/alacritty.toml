@@ -1,0 +1,16 @@
+[general]
+import = [
+   "~/.config/alacritty/catppuccin-mocha.toml",
+]
+
+[env]
+TERM = "xterm-256color"
+
+[font]
+normal = { family = "JetBrainsMonoNerdFont", style = "Relular"}
+bold = { family = "JetBrainsMonoNerdFont", style = "Bold"}
+italic = { family = "JetBrainsMonoNerdFont", style = "Italic"}
+
+[keyboard]
+bindings = [
+]
