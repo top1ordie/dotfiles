@@ -206,6 +206,7 @@ assign [class="TelegramDesktop"] $ws3
 assign [class="vesktop"] $ws3
 assign [class="obsidian"] $ws6
 assign [class="steam"] $ws4
+assign [class="Spotify"] $ws5
 
 exec --no-startup-id firefox
 exec --no-startup-id telegram-desktop
@@ -218,13 +219,15 @@ bindsym --release Print exec --no-startup-id ~/.local/bin/screenshot ~/Pictures/
 
 bindsym $mod+Shift+a sticky toggle
 bindsym $mod+z exec xournalpp
-#default_floating_border pixel 0
+default_floating_border pixel 10
 default_border pixel 2
 
 
 #for_window [class="^.*"] border pixel 2
 for_window [class="Com.github.xournalpp.xournalpp"] floating enable 
 for_window [class="qBittorrent"] floating enable 
+for_window [class="pavucontrol"] floating enable 
+for_window [class="nekoray"] floating enable 
 floating_modifier Mod1
 for_window [window_role="pop-up"] floating enable
 
