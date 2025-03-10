@@ -8,7 +8,6 @@ return {
 				sources = {
 					null_ls.builtins.formatting.stylua,
 					null_ls.builtins.formatting.gofumpt,
-					null_ls.builtins.formatting.dart_format,
 				},
 			})
 
