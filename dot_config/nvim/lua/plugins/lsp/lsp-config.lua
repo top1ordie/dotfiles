@@ -55,13 +55,13 @@ return {
           keymap.set("n", "<leader>rs", ":LspRestart<CR>", opts)
         end,
       })
-      mason_lspconfig.setup_handlers({
+      --[[mason_lspconfig.setup_handlers({
         function(server_name)
           lspconfig[server_name].setup({
             capabilities = capabilities,
           })
         end,
-      })
+      })]]--
     end,
   },
 }

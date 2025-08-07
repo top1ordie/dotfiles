@@ -11,6 +11,7 @@ return {
       local mason_tool_installer = require("mason-tool-installer")
 			mason.setup({})
 			mason_lspconfig.setup({
+        automatic_enable = true,
 				ensure_installed = {
 					"gopls",
 					"lua_ls",
