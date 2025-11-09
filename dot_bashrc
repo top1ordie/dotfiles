@@ -12,7 +12,7 @@ alias ls='ls --color=auto'
 alias scroff='xset dpms force off'
 alias grep='grep --color=auto'
 alias ssh='TERM=xterm-256color ssh'
-alias server='TERM=xterm-256color ssh -i /home/top1ordie/keys/server.key ubuntu@server'
+alias server='TERM=xterm-256color ssh fedora@server'
 alias non='bluetoothctl connect CC:14:BC:33:9E:6F'
 alias noff='bluetoothctl disconnect CC:14:BC:33:9E:6F'
 alias br='brightnessctl set'
@@ -23,6 +23,7 @@ alias vim='nvim'
 alias chout='autorandr --change'
 alias ipt='sudo iptables -L -nv --line-numbers'
 export PATH=$PATH:/home/top1ordie/.local/bin
+export PATH="$PATH:$HOME/go/bin"
 # Цвета Catppuccin Mocha
 FG_TEXT="\[\e[38;2;205;214;244m\]"  # Текст
 FG_ACCENT="\[\e[38;2;245;194;231m\]"  # Акцент
