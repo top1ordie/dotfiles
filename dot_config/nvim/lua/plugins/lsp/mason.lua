@@ -14,7 +14,6 @@ return {
         automatic_enable = true,
 				ensure_installed = {
 					"gopls",
-					"lua_ls",
 				},
 			})
 			mason_tool_installer.setup({
