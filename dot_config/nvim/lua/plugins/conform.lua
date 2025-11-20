@@ -15,7 +15,7 @@ return {
 			formatters_by_ft = {
 				lua = { "stylua" },
 				go = { "gofumpt" },
-				sql = { "pgformatter" },
+				sql = { "pgformatter", "sqlfmt", "sleek", "sql-formatter", "pgformatter" },
 			},
 			format_on_save = {
 				lsp_fallback = true, -- Use LSP formatting if conform doesn't have a formatter
@@ -23,6 +23,5 @@ return {
 				timeout_ms = 500, -- Timeout for formatting in milliseconds
 			},
 		})
-		vim.keymap.set("n", "<leader>gf", conform.format, {})
 	end,
 }

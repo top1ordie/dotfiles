@@ -1,5 +1,5 @@
 return {
-{
+	{
 		"williamboman/mason.nvim",
 		dependencies = {
 			"WhoIsSethDaniel/mason-tool-installer.nvim",
@@ -8,10 +8,10 @@ return {
 			local mason = require("mason")
 
 			local mason_lspconfig = require("mason-lspconfig")
-      local mason_tool_installer = require("mason-tool-installer")
+			local mason_tool_installer = require("mason-tool-installer")
 			mason.setup({})
 			mason_lspconfig.setup({
-        automatic_enable = true,
+				automatic_enable = true,
 				ensure_installed = {
 					"gopls",
 				},
@@ -20,14 +20,19 @@ return {
 				ensure_installed = {
 					"stylua", -- lua formatter
 					"gofumpt",
+					"pgformatter",
+					"sqlfmt",
+					"sleek",
+					"sql-formatter",
+					"pgformatter",
 				},
 			})
 		end,
 	},
-  {
+	{
 		"williamboman/mason-lspconfig.nvim",
-    dependencies = {
-     "williamboman/mason.nvim"
-		}
-  },
+		dependencies = {
+			"williamboman/mason.nvim",
+		},
+	},
 }
